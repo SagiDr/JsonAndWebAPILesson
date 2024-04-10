@@ -1,4 +1,5 @@
 ﻿using CalculatorWebAPI.Models;
+using System.Collections.Generic;
 using System.Text.Json;
 
 namespace CalculatorWebAPI.DTO
@@ -21,10 +22,6 @@ namespace CalculatorWebAPI.DTO
     {
         public List<MonkeyDto> Monkeys { get; set; }
         public override string ToString()
-        {
-            return JsonSerializer.Serialize(this);
-        }
-        public MonkeysList()
         {
             return JsonSerializer.Serialize(this);
         }
